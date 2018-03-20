@@ -1,0 +1,2 @@
+Basic Repo
+Now that we've learned some cool new skills, let's try them out by making and pushing our GitHub Repo!
