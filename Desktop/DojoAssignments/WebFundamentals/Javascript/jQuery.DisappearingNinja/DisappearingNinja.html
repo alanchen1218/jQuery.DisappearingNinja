@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>jQuery: Disappearing Ninja</title>
+	<link rel="stylesheet" type="text/css" href="disappearingninja.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('img').click(function(){
+				$(this).fadeOut('slow');
+			});
+			$('#show').click(function(){
+				$('img').fadeIn('slow');
+			})
+		});
+	</script>
+</head>
+<body>	
+	<div id="border">
+		<div class="firstRow"> <!-- put border around divs to create border -->
+			<img id="mainPhoto1" src="ninja.jpg" alt ="backup">
+			<img id="mainPhoto2" src="ninja1.jpg" alt ="backup">
+			<img id="mainPhoto3" src="ninja2.jpg" alt ="backup">
+			<img id="mainPhoto4" src="ninja3.jpg" alt ="backup">
+		</div>
+		<div class="secondRow">
+			<img id="mainPhoto5" src="ninja4.jpg" alt ="backup">
+			<img id="mainPhoto6" src="ninja5.jpg" alt ="backup">
+			<img id="mainPhoto7" src="ninja6.jpg" alt ="backup">
+			<img id="mainPhoto8" src="ninja7.jpg" alt ="backup">
+		</div>
+		<div class="thirdRow">
+			<img id="mainPhoto5" src="ninja7.jpg" alt ="backup">
+			<img id="mainPhoto6" src="ninja.jpg" alt ="backup">
+			<img id="mainPhoto7" src="ninja1.jpg" alt ="backup">
+			<img id="mainPhoto8" src="ninja3.jpg" alt ="backup">
+		</div>
+	</div>
+
+	<button id="show">Restore Ninjas!</button>
+</body>
+</html>
